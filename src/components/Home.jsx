@@ -15,9 +15,9 @@ const Home = () => {
             I'm a Front-end Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I have more than a years of experience building and designing
-            website. Currently, I love to work on web application using
-            technologies like React, Tailwind, Next JS, Ant Design, GSAP.
+            I have over a years of experience building and designing website.
+            Currently, I love to work on web application using technologies like
+            React, Tailwind, Next JS, Ant Design, GSAP.
           </p>
 
           <div>

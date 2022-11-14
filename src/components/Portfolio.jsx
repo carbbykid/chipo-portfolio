@@ -1,11 +1,18 @@
 import React from "react";
 import dapp from "../assets/portfolio/Dapp.png";
+import ecommerce from "../assets/portfolio/Ecommerce.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
       src: dapp,
+      url: "https://chipo-dashboard-uigo.vercel.app/",
+    },
+    {
+      id: 2,
+      src: ecommerce,
+      url: "https://chipopo-landing-page.vercel.app/",
     },
   ];
 
@@ -23,7 +30,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, url }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -32,7 +39,7 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center">
                 <a
-                  href="https://chipo-dashboard-uigo.vercel.app/"
+                  href={url}
                   alt="chipo"
                   target="_blank"
                   className=" px-6 py-3 m-4 duration-200 hover:scale-105"
